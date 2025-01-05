@@ -1,0 +1,471 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+/* navbar1 */
+.nav-belt{
+    width: 100%;
+    height: 65px;
+    background-color: #04734b;
+    display: flex;
+}
+.nav-logo{
+    width: 18%;
+    display: flex;
+    order: 1;
+    margin: 15px;
+}
+.nav-text{
+    color: white;
+    margin-left: 25px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.search-bar{
+    margin: 10px;
+    background-color: white;
+    width: 55%;
+    border-radius: 8px;
+    display: flex;
+    order: 2;
+}
+#nav-options{
+    height: 100%;
+    width: 8%;
+    border-radius: 8px 0px 0px 8px;
+    padding: 10px;
+    background-color: rgb(215, 215, 230);
+    outline: none;
+}
+.search{
+    outline: none;
+    border: none;
+    margin-left: 10px;
+    width: 90%;
+}
+.magnifying-icon{
+    background-color: rgb(175, 6, 110);
+    padding: 15px;
+    float: right;
+    width: 3%;
+    border-radius: 0px 8px 8px 0px;
+}
+.nav-end{
+    display: flex;
+    height: 100%;
+    width: 28%;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    order: 3;
+}
+.list{
+   width: 100px;
+    height: 50px;
+    color: white;
+    font-size: 14px;
+    padding-top: 15px;
+    padding-left: 15px;
+}
+#list-options{
+    background-color: #04734b;
+    border: none;
+    width: 100%;
+    height: 100%;
+    color: white;
+    outline: none;  
+}
+#li1{
+    display: flex;
+    order: 1;
+    padding-top: 15px;
+}
+#li1>img{
+    margin-top: 20px;
+}
+#li2{
+    order: 2;
+    width: 150px;
+}
+#li3{
+    order: 3;
+}
+#li4{
+    order: 4;
+    padding-top: 15px;
+}
+#li1:hover,#li2:hover,#li3:hover,#li4:hover{
+    border: 1px solid white;
+}
+
+/* navbar2 */
+.main-nav{
+    background-color: #024b30;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: flex-start;  
+}
+.main-nav-options{
+    color: white;
+    margin-left: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    padding: 9px;
+}
+.main-nav-options:hover{
+    cursor: pointer;
+    border: 1px solid white;
+    
+}
+.nav2-option{
+    color: white;
+    margin: 10px;
+    padding-left: 50vw;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+/* courosel */
+.corousel{
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+}
+.slides{  
+    width: 800%;
+    position: relative;
+    left: 0;
+    animation: 35s myslide infinite;
+}
+.slide{
+    position: relative;
+    width: 12.5%;
+    float: left;
+}
+@keyframes myslide{
+    0%{
+        left: 0%;
+    }
+    7%{
+        left: 0%;
+    }
+    15%{
+        left: -100%;
+    }
+    22%{
+        left: -100%;
+    }
+    29%{
+        left: -200%;
+    }
+    36%{
+        left: -200%;
+    }
+    42%{
+        left: -300%;
+    }
+    50%{
+        left: -300%;
+    }
+    57%{
+        left: -400%;
+    }
+    64%{
+        left: -400%;
+    }
+    70%{
+        left: -500%;
+    }
+    78%{
+        left: -500%;
+    }
+    85%{
+        left: -600%;
+    }
+    92%{
+        left: -600%;
+    }
+    100%{
+        left: -700%;
+    }
+}
+.blocks{
+    position: absolute;
+    left: 45vw;
+    top: 59vh;
+}
+.blocks>button{
+    width: 3vw;
+    height: 1vh;
+    border: none;
+    background-color: rgb(230, 230, 230);
+    border-radius: 9px;
+}
+.blocks>button:hover{
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+/* main-card */
+.card-div{
+    position: relative;
+    background-color: rgb(218, 228, 231);
+    width: 100%;
+    height: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 10px;
+}
+.main-card{
+    background-color: white;
+    margin: 10px;
+    width: 300px;
+    height: 400px;
+    padding: 15px;
+}
+.card{
+    width: 300px;
+    height: 290px;
+    font-size: 12px;
+}
+.boxes{ 
+    width: 300px;
+    height: 120px;
+    margin-top: 15px;
+    display: flex;
+}
+.box-img{
+    margin: 5px;
+}
+.main-card>div>img:hover, .box-img>img:hover, .box-div>img:hover{
+    cursor: pointer;
+}
+#buy-text:hover{
+    color: red !important;
+    cursor: pointer;
+}
+
+/* maindiv-2 */
+.main-div2{
+    position: relative;
+    background-color: rgb(218, 228, 231);
+    padding: 15px 50px 20px 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.Popular-products{
+    margin: auto;
+    width: 85vw;
+    background-color: white;
+    padding: 15px;
+}
+  .swiper {
+    width: 100%;
+    height: 25vh;
+  }
+.swiper-wrapper{
+    width: 100%;
+    height: 25vh;
+    
+}
+  .swiper-slide{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .swiper-slide>img{
+    width: 190px;
+    height: 25vh;
+    border-radius: 8px;
+  }
+  .swiper-button-next,.swiper-button-prev{
+    background-color: white;
+    padding: 20px;
+    color: black !important;
+  }
+
+
+
+.popular-pro{
+    width: 300px;
+    height: 200px;
+}
+.recommendation-div{
+    position: relative;
+    background-color: white;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+.rec{
+    align-self: center;
+    border: 2px solid rgb(177, 174, 174);
+    width: 99%;
+    height: 100px;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+.sign-in{
+    width: 150px;
+    padding: 8px;
+    background-color: rgb(204, 168, 6);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    margin: 10px;
+}
+.sign-in:hover{
+    cursor: pointer;
+    background-color: rgb(138, 113, 3);
+}
+.back-to-top-belt{
+    position: relative;
+    background-color: rgb(36, 36, 59);
+    width: 100%;
+    height: 15px;
+    color: white;
+    text-align: center;
+    padding: 15px 0px 15px 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+
+/* footer1 */
+.footer1{
+    position: relative;
+    background-color: rgb(55, 55, 71);
+    width: 100%;
+    height: 500px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+}
+.foot-lists{
+    width: 100%;
+    height: 400px;
+    color: white;
+    border-bottom: 2px solid gray;
+    
+}
+.footer-lists{
+    width: 65%;
+    height: 400px;
+    display: flex;
+    margin: auto;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.footer-li{
+    width: 100%;
+    height: 200px; 
+}
+.footer-li>ul>li{
+    list-style-type: none;
+}
+.footer-li>ul>li:hover{
+    text-decoration: underline;
+    opacity: 0.6;
+    cursor: pointer;
+}
+.footer-buttons{
+    height: 100px;
+    width: 60%; 
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.footer-buttons>img ,.footer-buttons>button , .footer-buttons>select{
+    width: 100px;
+    height: 40px;
+    margin: 20px;
+    background-color: rgb(55, 55, 71);
+    color: white;
+    border: none;
+    outline: none;
+}
+.footer-buttons>button , .footer-buttons>select{
+    border: 2px solid grey;
+    border-radius: 10px;
+    width: 150px;
+}
+/* footer2 */
+.footer2{
+    position: relative;
+    width: 100%;
+    height: 67vh;
+    background-color: rgb(29, 29, 41);
+    
+}
+.footer2-lists{
+    width: 70%;
+    height: 57vh;
+    margin-left: 18%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 8vh;
+}
+.lii{
+    height: 15%;
+    width: 12%;
+    color: whitesmoke;
+    font-size: 12px;
+    margin-left: 1vh;
+    margin-right: 1vh;
+}
+.lii>a{
+    color: whitesmoke;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    font-weight: lighter;
+}
+.lii>a>p,.lii>a>h4{
+    opacity: 0.9;
+}
+.lii>a:hover{
+    opacity: 0.6;
+    text-decoration: underline;
+}
+/* last-footer */
+.last-footer{
+    position: relative;
+    width: 100%;
+    height: 12vh;
+    background-color: rgb(29, 29, 41);
+}
+.last-footer-list>ul{
+    position: relative;
+    width: 50%;
+    left: 30vw;
+    color: white;
+    display: flex;
+}
+.last-footer-list>ul>li{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style-type: none;
+    font-weight: 500;
+    margin: 2vh;
+    font-size: 12px;
+
+}
+.last-footer-list>ul>li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.last-footer>p{
+    color: white;
+    font-weight: lighter;
+    font-size: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+
+
